@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <div id="home" class="bg-purple-100 flex flex-wrap rounded p-5 m-5">
+        <div class="flex flex-wrap items-center justify-center">
+            <h1 class="md:pl-20 font-bold text-2xl">Agency</h1>
+            <button onclick="navEvent()" class="flex flex-wrap ml-24 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <div class="flex flex-wrap">
+                <nav class="hidden font-semibold lg:flex flex-wrap justify-center items-center">
+                    <p class="px-5">|</p>
+                    <a href="#home" class="px-5">Home</a>
+                    <a href="#about" class="px-5">About</a>
+                    <a href="#service" class="px-5">Service</a>
+                    <a href="#portfolio" class="px-5">Portfoilo</a>
+                    <a href="#test" class="px-5">Testimonials</a>
+                    <a href="#contact" class="px-5">Contact</a>
+                    <a href="#" class="hidden flex-wrap text-white md:flex gap-3 items-center bg-red-500 px-3 py-3 rounded">
+                        Get a Quote
+                        <img class="flex flex-wrap" src="./b1-btn.png" alt="">
+                    </a>
+                </nav>
+                <div class="flex flex-wrap items-center justify-center my-5 ">
+                    <nav id="nav" class="hidden flex flex-wrap flex-col gap-5 items-center justify-center 
+                                        font-semibold rounded-2xl w-52 p-5 lg:hidden bg-transparent backdrop-blur-2xl">
+                        <ul><a href="#home">Home</a></ul> 
+                        <ul><a href="#about">About</a></ul>
+                        <ul><a href="#service">Service</a></ul>
+                        <ul><a href="#portfolio">Portfoilo</a></ul>
+                        <ul><a href="#test">Testimonials</a></ul>
+                        <ul><a href="#contact">Contact</a></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap lg:mt-32 p-5 gap-10">
+            <div class="flex flex-col md:pl-14 items-center text-center">
+                <h1 class="font-bold text-3xl">World class design
+                    for your Products.</h1>
+                <p class="flex items-center">Lets bring life to your brand.</p>
+                <div class=" flex flex-row gap-5 pt-5">
+                    <a class="bg-purple-500 text-white rounded px-3 py-2" href="#">Services</a>
+                    <a class="bg-red-500 text-white rounded px-3 py-2" href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="./b1-img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------  -->
+
+    <div id="service" class="flex flex-wrap justify-center bg-red-100 p-5 m-5 gap-10 rounded ">
+        <div class="flex flex-wrap text-center justify-center max-w-2xl">
+            <h1 class="font-bold text-4xl m-1">Our Services</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, nobis deserunt dolor, corporis deleniti ab
+                necessitatibus repellendus tempora ad dolorem explicabo praesentium iste et assumenda eligendi ea
+                pariatur, reiciendis repellat!</p>
+        </div>
+        <div class="flex flex-wrap gap-5 items-center justify-center">
+            <div class="flex flex-wrap flex-col rounded p-5 max-w-2xl bg-white">
+                <img class="h-15 w-14" src="./b2-img1.png" alt="">
+                <h5 class="font-bold">Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, facilis ipsam aliquid eaque asperiores veritatis quidem aliquam neque obcaecati est? Quo asperiores quas suscipit eaque explicabo qui nihil eum dolorem?</p>
+            </div>
+            <div class="flex flex-wrap flex-col rounded p-5 max-w-2xl bg-white">
+                <img class="h-14 w-12" src="./b2-img2.png" alt="">
+                <h5 class="font-bold">Developement</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, facilis ipsam aliquid eaque asperiores veritatis quidem aliquam neque obcaecati est? Quo asperiores quas suscipit eaque explicabo qui nihil eum dolorem?</p>
+            </div>
+            <div class="flex flex-wrap flex-col rounded p-5 max-w-2xl bg-white">
+                <img class="h-15 w-14" src="./b2-img3.png" alt="">
+                <h5 class="font-bold">Digital Marketing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, facilis ipsam aliquid eaque asperiores veritatis quidem aliquam neque obcaecati est? Quo asperiores quas suscipit eaque explicabo qui nihil eum dolorem?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="flex flex-wrap flex-col text-center justify-center bg-green-400 rounded p-10 m-20">
+        <h1 class="text-white p-5 font-bold text-2xl pb-8">Companies who trust on us</h1>
+        <div class="flex flex-wrap justify-evenly gap-5">
+            <img src="./b3-img.png" alt="">
+            <img class="hidden md:flex" src="./b3-img.png" alt="">
+            <img class="hidden md:flex" src="./b3-img.png" alt="">
+            <img class="hidden md:flex" src="./b3-img.png" alt="">
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="Portfoilo" class="flex flex-wrap flex-col items-center bg-red-100 p-10 m-5 gap-10 rounded ">
+        <div class="flex flex-wrap text-center justify-center max-w-2xl">
+            <h1 class="font-bold text-4xl my-4">Our Portfoilo</h1>
+            <p class="my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, nobis deserunt dolor, corporis deleniti ab
+                necessitatibus repellendus tempora ad dolorem explicabo praesentium iste et assumenda eligendi ea
+                pariatur, reiciendis repellat!</p>
+        </div>
+        <div class="flex flex-wrap flex-row gap-20 justify-center">
+            <div class="rounded-t-2xl pt-24">
+                <img src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col justify-center gap-2 bg-white rounded p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class="rounded-t-2xl pt-18">
+                <img src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col justify-center gap-2 bg-white rounded p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class=" rounded-t-2xl pt-24">
+                <img src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col justify-center gap-2 bg-white rounded p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class="rounded-t-2xl pt-18">
+                <img src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col justify-center gap-2 bg-white rounded p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class=" rounded-t-2xl pt-16">
+                <img src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col justify-center gap-2 bg-white rounded p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap flex-col">
+            <a href="#" class="bg-purple-500 px-3 py-1 rounded text-white">Explore</a>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="test" class="flex flex-wrap justify-center bg-purple-100 m-5 p-5 rounded">
+        <div class="flex flex-wrap flex-col gap-5 text-center">
+            <h1 class="font-bold text-3xl">Testimonials</h1>
+            <p class="text-sm text-#1F2937">What Our Clients Say</p>
+        </div>
+
+        <div class="flex flex-wrap rounded">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 m-5">
+                <div class="bg-purple-400 rounded p-5">
+                    <img src="./b5-img.svg" alt="">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam rem nesciunt cum aperiam laborum, modi at.
+                        Veritatis doloremque consectetur, est dignissimos quasi
+                        eos perferendis odio natus quas autem minus beatae.</p>
+                    <h2 class="font-bold">Name</h2>
+                    <p class="text-metal-500">Designation, Company</p>
+                </div>
+                <div class="bg-purple-400 rounded p-5">
+                    <img src="./b5-img.svg" alt="">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam rem nesciunt cum aperiam laborum, modi at.
+                        Veritatis doloremque consectetur, est dignissimos quasi
+                        eos perferendis odio natus quas autem minus beatae.</p>
+                    <h2 class="font-bold">Name</h2>
+                    <p class="text-metal-500">Designation, Company</p>
+                </div>
+                <div class=" bg-purple-400 rounded p-5">
+                    <img src="./b5-img.svg" alt="">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam rem nesciunt cum aperiam laborum, modi at.
+                        Veritatis doloremque consectetur, est dignissimos quasi
+                        eos perferendis odio natus quas autem minus beatae.</p>
+                    <h2 class="font-bold">Name</h2>
+                    <p class="text-metal-500">Designation, Company</p>
+                </div>
+                <div class=" bg-purple-400 rounded p-5">
+                    <img src="./b5-img.svg" alt="">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam rem nesciunt cum aperiam laborum, modi at.
+                        Veritatis doloremque consectetur, est dignissimos quasi
+                        eos perferendis odio natus quas autem minus beatae.</p>
+                    <h2 class="font-bold">Name</h2>
+                    <p class="text-metal-500">Designation, Company</p>
+                </div>
+                <div class=" bg-purple-400 rounded p-5">
+                    <img src="./b5-img.svg" alt="">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam rem nesciunt cum aperiam laborum, modi at.
+                        Veritatis doloremque consectetur, est dignissimos quasi
+                        eos perferendis odio natus quas autem minus beatae.</p>
+                    <h2 class="font-bold">Name</h2>
+                    <p class="text-metal-500">Designation, Company</p>
+                </div>
+                <div class=" bg-purple-400 rounded p-5">
+                    <img src="./b5-img.svg" alt="">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam rem nesciunt cum aperiam laborum, modi at.
+                        Veritatis doloremque consectetur, est dignissimos quasi
+                        eos perferendis odio natus quas autem minus beatae.</p>
+                    <h2 class="font-bold">Name</h2>
+                    <p class="text-metal-500">Designation, Company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="flex flex-wrap justify-evenly gap-5 bg-gray-900 m-5 p-5 rounded">
+        <div class="flex-wrap bg-red-500 m-5 p-10 rounded">
+            <img src="./b6-img1.png" alt="">
+            <h1 class="font-extralight">1000</h1>
+            <p>clients</p>
+        </div>
+        <div class="flex-wrap bg-purple-500 m-5 p-10 rounded">
+            <img src="./b6-img1.png" alt="">
+            <h1 class="font-extralight">1000</h1>
+            <p>clients</p>
+        </div>
+        <div class="flex-wrap bg-red-500 m-5 p-10 rounded">
+            <img src="./b6-img1.png" alt="">
+            <h1 class="font-extralight">1000</h1>
+            <p>clients</p>
+        </div>
+        <div class="flex-wrap bg-purple-500 m-5 p-10 rounded">
+            <img src="./b6-img1.png" alt="">
+            <h1 class="font-extralight">1000</h1>
+            <p>clients</p>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="flex flex-wrap bg-red-100 mt-10 m-5 p-6 md:p-20 rounded">
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="flex flex-col gap-5 items-center justify-center">
+                <img src="./b7-img.svg" alt="">
+            </div>
+            <div class="flex flex-col gap-5 tems-center justify-center">
+                <h1 class="font-bold text-5xl">Subscribe to our
+                    Newsletter</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt possimus consectetur
+                    incidunt, earum consequuntur atque aut enim ea ratione quis veritatis nihil eos
+                    repudiandae nam necessitatibus! Et commodi cumque nulla?</p>
+                <div class="flex flex-wrap justify-center gap-10">
+                    <form>
+                        <div class="flex flex-wrap bg-white p-2">
+                            <div class="hidden md:flex px-2">
+                                <img src="./b7-img1.png" alt="">
+                            </div>
+                            <div>
+                                <span class="block text-gray-500">Enter Your Name</span>
+                                <input type="text" class="focus:outline-none border-black border-b">
+                            </div>  
+                        </div>
+                    </form>
+                    <form>
+                        <div class="flex flex-wrap bg-white p-2">
+                            <div class="hidden md:flex px-2 py-5">
+                                    <img src="./b7-img2.svg" alt="">
+                            </div>
+                            <div>
+                                    <span class="block text-gray-500">Enter Your Email</span>
+                                    <input type="text" class="focus:outline-none border-black border-b">
+                            </div>  
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="about" class="flex flex-wrap bg-gray-900 m-5 p-5 rounded">
+        <div class="flex flex-wrap flex-col items-center text-center text-white">
+            <h1 class="font-bold text-3xl pb-3 pt-5">Our Team</h1>
+            <p class="lg:px-52 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa, molestiae ea illum sint, nemo dicta
+                culpa aliquid esse, aspernatur voluptatem distinctio? Laboriosam, expedita est sequi eaque repellendus
+                magni quia?</p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center text-center w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="flex flex-wrap flex-col bg-purple-100 rounded m-5 p-5">
+                    <img src="./b8-img.svg" alt="">
+                    <h1 class="font-bold text-2xl">Name</h1>
+                    <p>Desgination</p>
+                    <div class="flex flex-wrap gap-5 items-center justify-center mt-5">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                        <img class="hover:bg-red-400 bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                        <img class="hover:bg-red-500 bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-col bg-purple-100 rounded m-5 p-5">
+                    <img src="./b8-img.svg" alt="">
+                    <h1 class="font-bold text-2xl">Name</h1>
+                    <p>Desgination</p>
+                    <div class="flex flex-wrap gap-5 items-center justify-center mt-5">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                        <img class="hover:bg-red-400 bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                        <img class="hover:bg-red-500 bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-col bg-purple-100 rounded m-5 p-5">
+                    <img src="./b8-img.svg" alt="">
+                    <h1 class="font-bold text-2xl">Name</h1>
+                    <p>Desgination</p>
+                    <div class="flex flex-wrap gap-5 items-center justify-center mt-5">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                        <img class="hover:bg-red-400 bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                        <img class="hover:bg-red-500 bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-col bg-purple-100 rounded m-5 p-5">
+                    <img src="./b8-img.svg" alt="">
+                    <h1 class="font-bold text-2xl">Name</h1>
+                    <p>Desgination</p>
+                    <div class="flex flex-wrap gap-5 items-center justify-center mt-5">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                        <img class="hover:bg-red-400 bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                        <img class="hover:bg-red-500 bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-col bg-purple-100 rounded m-5 p-5">
+                    <img src="./b8-img.svg" alt="">
+                    <h1 class="font-bold text-2xl">Name</h1>
+                    <p>Desgination</p>
+                    <div class="flex flex-wrap gap-5 items-center justify-center mt-5">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                        <img class="hover:bg-red-400 bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                        <img class="hover:bg-red-500 bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-col bg-purple-100 rounded m-5 p-5">
+                    <img src="./b8-img.svg" alt="">
+                    <h1 class="font-bold text-2xl">Name</h1>
+                    <p>Desgination</p>
+                    <div class="flex flex-wrap gap-5 items-center justify-center mt-5">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                        <img class="hover:bg-red-400 bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                        <img class="hover:bg-blue-500 bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                        <img class="hover:bg-red-500 bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="contact" class="flex flex-wrap flex-col m-5 p-5 rounded bg-red-100">
+        <div class="flex flex-wrap items-center justify-center text-center pt-20">
+            <h1 class="font-semibold text-4xl ">Contact Us</h1>
+            <p class="lg:px-72 pt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa, molestiae ea illum sint, nemo dicta
+                culpa aliquid esse, aspernatur voluptatem distinctio? Laboriosam, expedita est sequi eaque repellendus
+                magni quia?</p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center text-center pt-20">
+            <div class="flex flex-wrap justify-center gap-5">
+                <form>
+                    <div class="flex flex-wrap md:flex-row bg-white p-2 w-50 md:w-96 rounded">
+                        <div class="flex flex-wrap  flex-col md:flex-row items-center w-full px-2">
+                            <img class="hidden md:flex" src="./b7-img1.png" alt="">
+                            <span class="text-gray-500">Enter Your Name</span>
+                            <input type="text" class="focus:outline-none border-black border-b w-50 md:w-full">
+                        </div>  
+                    </div>
+                </form>
+                <form>
+                    <div class="flex flex-wrap md:flex-row bg-white p-2 w-50 md:w-96 rounded">
+                        <div class="flex flex-wrap  flex-col md:flex-row items-center w-full px-2">
+                            <img class="p-4 hidden md:flex" src="./b9-img1.png" alt="">
+                            <span class="text-gray-500">Enter Your Email</span>
+                            <input type="text" class="focus:outline-none border-black border-b w-50 md:w-full">
+                        </div>  
+                    </div>
+                </form>
+                <form>
+                    <div class="flex flex-wrap md:flex-row bg-white p-2 w-50 md:w-96 rounded">
+                        <div class="flex flex-wrap  flex-col md:flex-row items-center w-full px-2">
+                            <img class="p-4 hidden md:flex" src="./b9-img2.png" alt="">
+                            <span class="text-gray-500">Choose One</span>
+                            <input type="text" class="focus:outline-none border-black border-b w-50 md:w-full">
+                        </div>  
+                    </div>
+                </form>
+                <form>
+                    <div class="flex flex-wrap md:flex-row bg-white p-2 w-50 md:w-96 rounded">
+                        <div class="flex flex-wrap flex-col md:flex-row  items-center w-full px-2">
+                            <img class="p-4 hidden md:flex" src="./b9-img3.png" alt="">
+                            <span class="text-gray-500">Enter Your Message</span>
+                            <input type="text" class="focus:outline-none border-black border-b w-50 md:w-full">
+                        </div>  
+                    </div>
+                </form>
+            </div>
+            <div class="flex flex-wrap my-10 justify-center w-full">
+                <a class="bg-purple-500 text-2xl text-white font-semibold px-5 py-2 rounded" href="">Submit</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="flex flex-wrap flex-col justify-center text-center bg-purple-100 m-5 p-5 rounded">
+        <div class="flex flex-wrap flex-col m-5 gap-2">
+            <h1 class="text-4xl font-semibold ">Blogs</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa</p>
+        </div>
+
+        <div class="flex flex-wrap flex-row gap-9 items-center justify-center">
+            <div class=" flex flex-col flex-wrap">
+                <img class="rounded-t-2xl" src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col gap-2 bg-white rounded-b-2xl p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class=" flex flex-col flex-wrap">
+                <img class="rounded-t-2xl" src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col gap-2 bg-white rounded-b-2xl p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class=" flex flex-col flex-wrap">
+                <img class="rounded-t-2xl" src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col gap-2 bg-white rounded-b-2xl p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class=" flex flex-col flex-wrap">
+                <img class="rounded-t-2xl" src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col gap-2 bg-white rounded-b-2xl p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+            <div class=" flex flex-col flex-wrap rounded-t-2xl">
+                <img class="rounded-t-2xl" src="./b4-img.svg" alt="">
+                <div class="flex flex-wrap flex-col gap-2 bg-white rounded-b-2xl p-2">
+                    <p class="pt-1">
+                        <span class="bg-green-300 font-semibold text-white py-1 px-2 rounded-2xl">Branding</span>
+                        <span class="bg-red-300 font-semibold text-white py-1 px-2 rounded-2xl">Design</span>
+                    </p>
+                    <h3 class="pt-2 font-bold text-2xl">Portfoilo</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="flex flex-wrap flex-col justify-center text-center text-white bg-gradient-to-r from-purple-500 to-red-500 m-5 p-5 rounded">
+        <h1 class="text-4xl font-bold my-3">Let's do something amazing</h1>
+        <p>Lorem ipsum dolor sit amet</p>
+        <div class="flex flex-wrap justify-center my-5">
+            <a class=" bg-white px-4 py-2 font-bold text-2xl text-black rounded" href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="flex flex-wrap flex-col text-white bg-gray-900 rounded m-5 p-5">
+        <div class="flex flex-wrap flex-row justify-center">
+            <div class="flex flex-wrap flex-col gap-5 md:pl-14">
+                <h1 class="font-bold text-2xl">Agency</h1>
+                <p class="md:w-80 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia
+                    ipsa nobis ut, reprehenderit praesentium nisi deleniti nemo laboriosam
+                    est expedita! Consequuntur aperiam deleniti vel consequatur ea itaque
+                    ratione explicabo.</p>
+            </div>
+            <div class="flex flex-wrap flex-col gap-5 md:pl-14">
+                <h1 class="font-bold text-2xl">Address</h1>
+                <p class="flex flex-wrap flex-col text-gray-500">
+                    <span>Address Line 1</span>
+                    <span>Address Line 2</span>
+                    <span>Address Line 3</span>
+                    <span>Pincode - 000000</span>
+                </p>
+            </div>
+            <div class="flex flex-wrap flex-col gap-5 md:pl-14">
+                <h1 class="font-bold text-2xl">Enqueries</h1>
+                <p class="flex flex-wrap flex-col text-gray-500">
+                    <span>000 - 000 - 000</span>
+                    <span>sample@gmail.com</span>
+                </p>
+                <div class="flex flex-wrap flex-row gap-2">
+                    <img class="bg-white p-2 rounded" src="./b8-c1.png" alt="">
+                    <img class="bg-white p-2 rounded" src="./b8-c2.png" alt="">
+                    <img class="bg-white p-2 rounded" src="./b8-c3.png" alt="">
+                    <img class="bg-white p-2 rounded" src="./b8-c4.png" alt="">
+                    <img class="bg-white p-2 rounded" src="./b8-c5.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap flex-col items-center justify-center w-full">
+            <div class="flex flex-wrap bg-white h-0.5 w-full rounded mt-5"></div>
+            <p class="text-gray-500 mt-4">
+                <span class="block">All Rights Reserved</span>
+                Designed by Poorana Selvan
+            </p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
